@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire de commande InfoFournie</title>
+        <link rel="stylesheet" href="formulaire.css">
+    </head>
+    <body>
+        <h1>Remplissez le formulaire de commande :</h1>
+        <form>
+            <p>
+                <span>Indiquez les composants que vous souhaitez commander et leurs nombre:</span> <br/>
+                <input type="checkbox" name="processeur" id="processeur"/> <label for="processeur">Processeur CPU</label>
+                <input type="number" min="0" max="999"/>
+                <select name="processeur">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="intel">Intel Core i3/i5/i7/i9 79€99-1099€99</option>
+                    <option value="amd">AMD A/Ryzen 69€99-999€99</option>
+                    <option value="snapdragon">Snapdragon 149€99</option>
+                    <option value="arm">ARM 129€99</option>
+                </select><br/>
+                <input type="checkbox" name="graphique" id="graphique"/> <label for="graphique">Carte graphique GPU</label>
+                <input type="number" min="0" max="999"/>
+                <select name="graphique">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="nvidia">NVIDIA GTX/RTX 149€99-1899€99</option>
+                    <option value="amd">AMD Radeon 99€99-1699€99</option>
+                    <option value="intel">Intel Iris 699€99-899€99</option>
+                </select><br/>
+                <input type="checkbox" name="ram" id="ram"/> <label for="ram">Barettes de RAM</label>
+                <input type="number" min="0" max="999"/>
+                <select name="ram">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="samsung">Samsung 29€99-49€99</option>
+                    <option value="corsair">Corsair 39€99-59€99</option>
+                    <option value="tridentz">TridentZ 29€99-39€99</option>
+                </select><br/>
+                <input type="checkbox" name="cartem" id="cartem"/> <label for="cartem">Carte mère</label>
+                <input type="number" min="0" max="999"/>
+                <select name="cartem">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="msi">MSI 149€99-399€99</option>
+                    <option value="asus">ASUS 199€99-299€99</option>
+                    <option value="hp">HP 149€99-299€99</option>
+                    <option value="lenovo">Lenovo 99€99-149€99</option>
+                </select><br/>
+                <input type="checkbox" name="DDi" id="DDi"/> <label for="DDi">Disque dur interne SSD/HDD</label>
+                <input type="number" min="0" max="999"/>
+                <select name="DDi">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="seagate">Seagate Barracuda 79€99-129€99</option>
+                    <option value="samsung">Samsung 79€99-159€99</option>
+                    <option value="sandisk">SanDisk 69€99-149€99</option>
+                    <option value="toshiba">Toshiba 49€99-99€99</option>
+                    <option value="kingston">Kingston 59€99-129€99</option>
+                    <option value="pigeon">Apple 129€99-259€99</option>
+                </select>
+                <input type="checkbox" name="sata" id="sata"/> <label for="sata">Inclure les câbles SATA ?</label><br/>
+                <input type="checkbox" name="DDe" id="DDe"/> <label for="DDe">Disque dur externe HDD/NAS USB-3</label>
+                <input type="number" min="0" max="999"/>
+                <select name="DDe">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="seagate">Seagate 69€99-119€99</option>
+                    <option value="sandisk">SanDisk 59€99-139€99</option>
+                    <option value="kingston">Kingston 59€99-129€99</option>
+                    <option value="pigeon">Apple 89€99-149€99</option>
+                </select><br/>
+                <input type="checkbox" name="alim" id="alim"/> <label for="alim">Alimentation</label>
+                <input type="number" min="0" max="999"/>
+                <select name="alim">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="corsair">Corsair 89€00</option>
+                    <option value="seasonic">Seasonic 79€99</option>
+                    <option value="gigabyte">GigaByte 79€00</option>
+                    <option value="bequiet">Be Quiet ! 69€99</option>
+                </select><br/>
+                <input type="checkbox" name="boite" id="boite"/> <label for="boite">Boîtier</label>
+                <input type="number" min="0" max="999"/>
+                <select name="boite">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="msi">MSI 49€99</option>
+                    <option value="acer">AlienWare 79€99</option>
+                    <option value="hp">HP 49€99-89€99</option>
+                    <option value="asus">ASUS 69€99</option>
+                    <option value="dell">Dell 49€99</option>
+                    <option value="lenovo">Lenovo 49€90</option>
+                </select><br/>
+                <input type="checkbox" name="refroidissement" id="refroidissement"/> <label for="refroidssement">Système de refroidissement Watercooling, Ventilation, radiateur/dissipateur thermique</label>
+                <input type="number" min="0" max="999"/>
+                <select name="refroidissementtype">
+                    <option value="none">Séléctionnez un type de refroidisseur</option>
+                    <option value="watercooling">Watercooling</option>
+                    <option value="dissipateur">Dissipateur Thermique</option>
+                    <option value="ventil">Ventilation</option>
+                </select>
+                <select name="refroidissementmarque">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="masterliquid">MasterLiquid 89€99-149€99</option>
+                    <option value="msi">MSI 79€99</option>
+                    <option value="corsair">Corsair 99€99-129€99</option>
+                    <option value="gigabyte">GigaByte 79€99-99€99</option>
+                </select><br/>
+                <input type="checkbox" name="moniteur" id="moniteur"/> <label for="moniteur">Moniteur</label>
+                <input type="number" min="0" max="999"/>
+                <select name="moniteur">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="samsung">Samsung G9 1299€99</option>
+                    <option value="pigeon">Apple 299€99</option>
+                    <option value="hp">HP 99€99</option>
+                    <option value="lg">LG 79€99</option>
+                    <option value="msi">MSI 129€99</option>
+                    <option value="acer">Acer 69€99</option>
+                    <option value="asus">ASUS 99€99</option>
+                    <option value="aoc">AOC 39€99</option>
+                    <option value="dell">Dell 69€99</option>
+                </select><br/>
+            </p>
+        </form>
+        <br/>
+        <form>
+            <p>
+                <span>Indiquez les modèles pré-montés que vous voulez commander:</span> <br/>
+                <input type="checkbox" name="portable" id="portable"/> <label for="portable">Ordinateur portable</label>
+                <input type="number" min="0" max="999"/>
+                <select name="portable">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="acer">Acer 699€99-899€99</option>
+                    <option value="asus">ASUS 699€99-1299€99</option>
+                    <option value="hp">HP 499€99-799€99</option>
+                    <option value="lenovo">Lenovo 399€99-699€99</option>
+                    <option value="msi">MSI 699€99-1599€99</option>
+                    <option value="dell">Dell 299€99-499€99</option>
+                    <option value="pigeon">Apple MacBook 899€99-1899€99</option>
+                    <option value="toshiba">Toshiba 599€99-899€99</option>
+                    <option value="razer">Razer 799€99-1599€99</option>
+                    <option value="google">Chromebook 599€99-899€99</option>
+                </select><br/>
+                <input type="checkbox" name="tour" id="tour"/> <label for="tour">PC Tour montée</label>
+                <input type="number" min="0" max="999"/>
+                <select name="tour">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="acer">Acer 499€99-999€99</option>
+                    <option value="asus">ASUS 599€99-1199€99</option>
+                    <option value="hp">HP 399€99-699€99</option>
+                    <option value="lenovo">Lenovo 399€99-599€99</option>
+                    <option value="msi">MSI 599€99-1399€99</option>
+                    <option value="dell">Dell 299€99-499€99</option>
+                    <option value="pigeon">Apple Mac 599€99-1899€99</option>
+                    <option value="toshiba">Toshiba 499€99-799€99</option>
+                    <option value="razer">Razer 699€99-1499€99</option>
+                </select><br/>
+                <input type="checkbox" name="tablette" id="tablette"/> <label for="tablette">Tablette</label>
+                <input type="number" min="0" max="999"/>
+                <select name="tablette">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="samsung">Samsung 199€99</option>
+                    <option value="pigeon">Apple iPad 499€99</option>
+                    <option value="huawei">Huawei 399€99</option>
+                    <option value="lenovo">Lenovo 99€99</option>
+                    <option value="microsoft">Microsoft 299€99</option>
+                    <option value="asus">ASUS 299€99</option>
+                    <option value="xiaomi">Xiaomi 199€99</option>
+                </select><br/>
+            </p>
+        </form>
+        <br/>
+        <form>
+            <p>
+                <span>Indiquez les accessoires et les périphériques que vous voulez:</span> <br/>
+                <input type="checkbox" name="souris" id="souris"/> <label for="souris">Souris</label>
+                <input type="number" min="0" max="999"/>
+                <select name="souris">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="logitech">Logitech 59€99</option>
+                    <option value="hp">HP 29€99</option>
+                    <option value="razer">Razer 79€99</option>
+                    <option value="corsair">Corsair 69€99</option>
+                    <option value="steelseries">Steelseries 69€99</option>
+                    <option value="pigeon">Apple 49€99</option>
+                </select><br/>
+                <input type="checkbox" name="clavier" id="clavier"/> <label for="clavier">Clavier</label>
+                <input type="number" min="0" max="999"/>
+                <select name="clavier">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="corsair">Corsair 79€99</option>
+                    <option value="razer">Razer 79€99</option>
+                    <option value="pigeon">Apple 69€99</option>
+                    <option value="hp">HP 29€99</option>
+                    <option value="steelseries">Steelseries 59€99</option>
+                    <option value="logitech">Logitech 59€99</option>
+                </select>
+                <select name="claviertype">
+                    <option value="none">Séléctionnez un type de clavier</option>
+                    <option value="meca">Clavier mécanique</option>
+                    <option value="num">Clavier numérique</option>
+                </select><br/>
+                <input type="checkbox" name="imprimanteJ" id="imprimanteJ"/> <label for="imprimanteJ">Imprimante jet d'encre</label>
+                <input type="number" min="0" max="999"/>
+                <select name="imprimanteJmarque">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="hp">HP 49€99</option>
+                    <option value="epson">Epson 39€99</option>
+                    <option value="canon">Canon 49€99</option>
+                    <option value="samsung">Samsung 39€99</option>
+                    <option value="lexmark">Lexmark 59€99</option>
+                </select>
+                <select name="imprimanteJtype">
+                    <option value="none">Séléctionnez le type d'imprimante</option>
+                    <option value="entreprise">Imprimante d'entreprise</option>
+                    <option value="bureau">Imprimante de bureau</option>
+                </select><br/>
+                <input type="checkbox" name="imprimanteL" id="imprimanteL"/> <label for="imprimanteL">Imprimante Laser</label>
+                <input type="number" min="0" max="999"/>
+                <select name="imprimanteLmarque">
+                    <option value="none">Séléctionnez une marque</option>
+                    <option value="canon">Canon 349€99</option>
+                    <option value="epson">Epson 339€99</option>
+                    <option value="hp">HP 349€99</option>
+                    <option value="samsung">Samsung 339€99</option>
+                    <option value="lexmark">Lexmark 399€99</option>
+                </select>
+                <select name="imprimanteLtype">
+                    <option value="none">Séléctionnez un type d'imprimante</option>
+                    <option value="entreprise">Imprimante d'entreprise</option>
+                    <option value="bureau">Imprimante de bureau</option>
+                </select><br/>
+            </p>
+        </form>
+        <button><a href="formsend.html">Envoyer</a></button>
+        <br/>
+        <h2><a href="mailto:swanny.quenehen@ent.auvergnerhonealpes.fr">Nous contacter</a></h2>
+    </body>
+</html>
